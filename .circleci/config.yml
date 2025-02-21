@@ -11,7 +11,7 @@ jobs:
             - "SHA256:kEiE0J85glxA6V3szW+LFuvxaUyZQgvOZoYV3G4cgWU"
       - run:
           name: "Login to GHCR"
-          command: echo "${GHCR_TOKEN}" | docker login ghcr.io -u quangtho908 --password-stdin
+          command: echo $GHCR_TOKEN | docker login ghcr.io -u quangtho908 --password-stdin
       - run:
           name: "Compile with Maven"
           command: mvn clean compile
