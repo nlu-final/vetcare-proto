@@ -1,0 +1,14 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: ghcr.io/nlu-final/dockerfile:1.0.0
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: "Login to GHCR"
+          command: echo "${GHCR_TOKEN}" | docker login ghcr.io -u quangtho908 --password-stdin
+      - run:
+          name: "Compile with Maven"
+          command: mvn clean compile

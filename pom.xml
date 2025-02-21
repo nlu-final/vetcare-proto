@@ -8,16 +8,16 @@
   <artifactId>vetcare-proto</artifactId>
   <version>1.0.0</version>
   <name>vetcare-proto</name>
-  <url>https://github.com/NLU-FINAL/vetcare-proto</url>
+  <url>https://github.com/nlu-final/vetcare-proto</url>
   <packaging>jar</packaging>
   <distributionManagement>
     <snapshotRepository>
       <id>snapshots</id>
-      <url>https://maven.pkg.github.com/NLU-FINAL/vetcare-proto</url>
+      <url>https://maven.pkg.github.com/nlu-final/vetcare-proto</url>
     </snapshotRepository>
     <repository>
       <id>releases</id>
-      <url>https://maven.pkg.github.com/NLU-FINAL/vetcare-proto</url>
+      <url>https://maven.pkg.github.com/nlu-final/vetcare-proto</url>
     </repository>
   </distributionManagement>
 
@@ -26,7 +26,7 @@
     <maven.compiler.target>17</maven.compiler.target>
     <maven.compiler.source>17</maven.compiler.source>
     <version.grpc>1.70.0</version.grpc>
-    <os.detected.classifier>osx-x86_64</os.detected.classifier>
+    <os.detected.classifier>linux/amd64</os.detected.classifier>
   </properties>
 
   <dependencies>
