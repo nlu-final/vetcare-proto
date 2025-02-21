@@ -12,3 +12,7 @@ jobs:
       - run:
           name: "Compile with Maven"
           command: mvn clean compile
+workflows:
+  build_and_deploy:
+    jobs:
+      - build
