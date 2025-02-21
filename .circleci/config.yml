@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: ghcr.io/nlu-final/dockerfile:1.0.0
+      - image: ghcr.io/nlu-final/dockerfile/maven-3-8-8:1.0.0
         auth:
           username: quangtho908
           password: $GHCR_TOKEN
