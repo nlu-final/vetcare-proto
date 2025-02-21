@@ -14,7 +14,10 @@ jobs:
             - "SHA256:kEiE0J85glxA6V3szW+LFuvxaUyZQgvOZoYV3G4cgWU"
       - run:
           name: "check passphare"
-          command: echo $GPG_PASSPHRASE
+          command: |
+            echo $GPG_PASSPHRASE
+            printenv
+
       - run:
           name: "Compile with Maven"
           command: mvn clean compile
