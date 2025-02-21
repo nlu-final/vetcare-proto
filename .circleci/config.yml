@@ -13,17 +13,11 @@ jobs:
           fingerprints:
             - "SHA256:kEiE0J85glxA6V3szW+LFuvxaUyZQgvOZoYV3G4cgWU"
       - run:
-          name: "check passphare"
-          command: |
-            echo $GPG_PASSPHRASE
-            printenv
-
-      - run:
           name: "Compile with Maven"
           command: mvn clean compile
       - run:
           name: "Deploy dependency"
-          command: mvn deploy
+          command: mvn clean deploy -Dgpg.passphrase="$GPG_PASSPHRASE" -DskipTests
 workflows:
   build_and_deploy:
     jobs:
