@@ -6,6 +6,9 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "SHA256:kEiE0J85glxA6V3szW+LFuvxaUyZQgvOZoYV3G4cgWU"
       - run:
           name: "Login to GHCR"
           command: echo "${GHCR_TOKEN}" | docker login ghcr.io -u quangtho908 --password-stdin
