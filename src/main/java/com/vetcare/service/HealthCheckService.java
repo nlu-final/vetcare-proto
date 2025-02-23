@@ -1,4 +1,4 @@
-package com.vetcare.service;
+package vetcare.service;
 
 import com.vetcare.grpc.health.HealthCheckRequest;
 import com.vetcare.grpc.health.HealthCheckResponse;
