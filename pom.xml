@@ -6,7 +6,7 @@
 
   <groupId>io.github.quangtho908</groupId>
   <artifactId>vetcare-proto</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <name>vetcare-proto</name>
   <url>https://github.com/nlu-final/vetcare-proto</url>
   <packaging>jar</packaging>
